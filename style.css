@@ -66,22 +66,6 @@
 .link:hover{
     color: var(--primary);
 }
-.dark-mode{
-    width: 36px;
-    height: 18px;
-    border: 3px solid var(--text);
-    border-radius: 50px;
-    cursor: pointer;
-}
-.dark-mode-circle{
-    width: 20px;
-    height: 19px;
-    background-color: var(--text);
-    border-radius: 44%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .fa-moon{
     color: var(--text);
     font-size: 1.5rem;
@@ -94,13 +78,11 @@
 .resp-btn{
     display: none;
 }
-.resp-btn > .fa-bars{
-    display: none;
+#open-menu-btn, #close-menu-btn{
+    border: none;
+    background-color: transparent;
     font-size: 2rem;
-}
-.resp-btn > .fa-bars-staggered{
     display: none;
-    font-size: 2rem;
 }
 
 .fa-linkedin-in, .fa-instagram, .fa-facebook-f{
@@ -287,22 +269,107 @@
 .about-me-top{
     padding: 20vh 0;
 }
+/* Skills Section */
+.text-skills{
+    font-size: 1.5rem;
+    width: 70%;
+}
+.skills-label{
+    background-color: var(--primary);
+    color: var(--bg);
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 2px 10px;
+    border-radius: 0px;
+    margin: 10px 0;
+}
+.edu-box{
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: var(--bg);
+    border-bottom: 3px solid var(--primary);
+    border-radius: 8px;
+    width: 20.6vw;
+}
+.b, .edu-year{
+    font-weight: 500;
+}
+.edu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skills{
+    display: flex;
+    gap: 15px;
+}
+.gray-bg{
+    width: 400px;
+    height: 5px;
+    background-color: lightgray;
+}
+.progress-skill{
+    height: 100%;
+    width: 75%;
+    background-color: var(--primary);
+}
+.skill-title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.skill-middle{
+    padding: 20px 20px;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.skills-container{
+    padding: 10vw;
+}
+
 /* Responsiveness Responsiveness Responsiveness Responsiveness */
-@media screen and (max-width:960px) {
+@media screen and (max-width:1350px) {
+    .about-content{
+        flex-direction: column;
+    }
+    .about-top{
+        margin-top: 20px;
+    }
+    .skills{
+        flex-wrap: wrap;
+    }
+    .edu-box{
+        width: 33vw;
+    }
+}
+@media screen and (max-width:1200px) {
+    .home{
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (max-width:980px) {
     .container{
         width: 90%;
+    }
+    .resp-btn{
+        display: inline-block;
     }
     .links{
         display: none;
         flex-direction: column;
         justify-content: center;
         position: fixed;
-        top: 10%;
-        right: 5%;
+        top: 6%;
+        right: 4.5%;
         gap: 0;
     }
     .links a, .fa-moon{
         background-color: var(--primary);
+        color: var(--bg);
         width: 100px;
         height: 25px;
         padding: 5px 15px;
@@ -310,18 +377,90 @@
         justify-content: end;
         align-items: center;
     }
-    .resp-btn{
-        display: inline-block;
+    .links a:hover, .fa-moon:hover{
+        background-color: var(--bg);
+        color: var(--primary);
     }
-    .resp-btn > .fa-bars{
+    #open-menu-btn{
         display: inline-block;
         cursor: pointer;
     }
-    .home{
-        flex-direction: column-reverse;
+    .skills-container{
+        padding: 0;
     }
-    .about-content{
-        flex-direction: column;
+    .edu-box, .skill-middle{
+        width: 39vw;
     }
+    .gray-bg{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .pfp{
+        width: 350px;
+    }
+    .left-home{
+        gap: 25px;
+    }
+    .info{
+        width: 90%;
+    }
+    .about-a{
+        font-size: 2rem;
+    }
+    .about-b{
+        font-size: 1rem;
+    }
+    .name-about{
+        font-size: 2.2rem;
+    }
+    .title-about{
+        font-size: 1.5rem;
+    }
+    .text-skills{
+        width: 100%;
+        font-size: 1.4rem;
+    }
+    .edu-box, .skill-middle {
+        width: 84vw;
+    }
+    .desc{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width:500px) {
+    .pfp{
+        width: 60vw;
+    }
+    .social{
+        display: none;
+    }
+    .name, .name-about{
+        font-size: 2rem;
+    }
+    .title, .title-about{
+        font-size: 1.2rem;
+    }
+    .info{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .edu-box, .skill-middle{
+        width: 81.7vw;
+    }
+    .about-box{
+        flex-wrap: wrap;
+    }
+    .about-left{
+        display: none;
+    }
+    /* .logo-circle{
+        width: 150px;
+        height: 150px;
+    }
+    .circle{
+        width: 300px;
+        height: 300px;
+    } */
 }
 /* Responsiveness Responsiveness Responsiveness Responsiveness */
