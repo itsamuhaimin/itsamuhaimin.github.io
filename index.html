@@ -1,3 +1,5 @@
+<!-- Programmer: Irfan Shadik Rishad -->
+<!-- Created Date: Dec 12, 2022 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,8 +20,8 @@
             <!-- links -->
             <img src="./img/logo-prototype-2.png" alt="" class="logo">
             <!-- middle links -->
-            <div class="links">
-                <a href="#home" class="link">HOME</a>
+            <div class="links" id="nav-btn">
+                <a href="#home" class="link" onclick="home()">HOME</a>
                 <a href="#about" class="link">ABOUT</a>
                 <a href="#skill" class="link">SKILLS</a>
                 <a href="#projects" class="link">PROJECTS</a>
@@ -31,8 +33,12 @@
             </div>
             <!-- Responsible Buttons -->
             <div class="resp-btn">
-                <i class="fa-solid fa-bars"></i>
-                <i class="fa-solid fa-bars-staggered"></i>
+                <button id="open-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <button id="close-menu-btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
             </div>
         </div>
     </div>
@@ -65,7 +71,7 @@
         </div>
     </div>
 <!-- About Me Page -->
-<div class="about-me-top container">
+<div class="about-me-top container" id="about">
     <div class="about-text">
         <p class="about-bg">
             About Me
@@ -122,6 +128,91 @@
                 <button class="cv">
                     Download CV <i class="fa-solid fa-download"></i>
                 </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Skill Page Start -->
+<div class="skills-container container" id="skill">
+    <div class="about-text">
+        <p class="about-bg">
+            Skills
+        </p>
+        <p class="about">
+            Skills
+        </p>
+        <div class="h-bar">
+        </div>
+    </div>
+    <!-- Text -->
+    <div class="skills-heading">
+        <h1 class="header-skills">Education & Skills</h1>
+        <p class="text-skills">For more than 2 years I have been accomplishing enough with mordern UI/UX Design, New generation technologies and tools.</p>
+    </div>
+    <div class="skills">
+        <!-- Education -->
+        <div class="skills-education">
+            <p class="skills-label">Education</p>
+            <div class="edu">
+                <div class="edu-box">
+                    <p class="edu-year">2022-Present</p>
+                    <p class="edu-sub"><span class="highlighter b">BSc in Phylosophy</span>
+                        - Murarichad College, Sylhet</p>
+                </div>
+                <div class="edu-box">
+                    <p class="edu-year">2018-2022</p>
+                    <p class="edu-sub"><span class="highlighter b">HSC</span>
+                        - Sylhet Govt. College, Sylhet</p>
+                </div>
+            </div>
+        </div>
+        <!-- Skills -->
+        <div class="skills-pure">
+            <p class="skills-label">Skills</p>
+            <div class="skill-middle">
+                <div class="skill-title b">
+                    <p class="app-title">Figma</p>
+                    <p class="app-progress">75%</p>
+                </div>
+                <div class="gray-bg">
+                    <div class="progress-skill">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-middle">
+                <div class="skill-title b">
+                    <p class="app-title">Photoshop</p>
+                    <p class="app-progress">85%</p>
+                </div>
+                <div class="gray-bg">
+                    <div class="progress-skill" style="width: 85%;">
+                    </div>
+                </div>
+            </div>
+            <div class="skill-middle">
+                <div class="skill-title b">
+                    <p class="app-title">Illustrator</p>
+                    <p class="app-progress">90%</p>
+                </div>
+                <div class="gray-bg">
+                    <div class="progress-skill" style="width: 90%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="certificates-skills">
+            <p class="skills-label">Certificates</p>
+            <div class="edu">
+                <div class="edu-box">
+                    <p class="edu-year">2022</p>
+                    <p class="edu-sub"><span class="highlighter b">Advanced Graphics Design</span>
+                        - Sheikh Kamal IT Training & Incubation Center Project, Sylhet</p>
+                </div>
+                <div class="edu-box">
+                    <p class="edu-year">2020</p>
+                    <p class="edu-sub"><span class="highlighter b">Basic UI/UX</span>
+                        - Udemy</p>
+                </div>
             </div>
         </div>
     </div>
