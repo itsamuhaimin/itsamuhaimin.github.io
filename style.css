@@ -390,8 +390,92 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.services-container{
-    padding: 5vw 0 15vw 0;
+.services-container, .client-container, .contact-container{
+    padding: 15vw 0 8vw 0;
+}
+/* CLIENT CLIENT */
+.client{
+    width: 400px;
+    background-color: var(--bg);
+    padding: 15px;
+}
+.client-img{
+    width: 120px;
+    border-radius: 50%;
+}
+.client-say{
+    font-size: 1.2rem;
+}
+.client-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.client-workplace{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.client-boxes{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+/* CONTACT CONTACT CONTACT CONTACT CONTACT */
+.contact-left-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+    background-color: var(--bg);
+}
+.c-icon{
+    font-size: 2rem;
+    color: var(--primary);
+}
+.contact-box-name{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.contact-box-desc {
+    font-size: 1.3rem;
+}
+.contact-left-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.contact-down{
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+.input-name, .input-email, .input-sub, .input-message{
+    width: 100%;
+    height: 40px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: var(--bg);
+    padding: 5px 10px;
+    font-weight: 600;
+}
+.input-name:focus-visible, .input-email:focus-visible,
+     .input-sub:focus-visible, .input-message:focus-visible{
+    outline: none;
+}
+.input-message{
+    height: 150px;
+}
+.contact-right-header{
+    font-size: 1.8rem;
 }
 
 
@@ -409,6 +493,12 @@
     .edu-box{
         width: 33vw;
     }
+}
+@media screen and (max-width:1024px) {
+    .container{
+        width: 90%;
+    }
+
 }
 @media screen and (max-width:1200px) {
     .home{
@@ -458,6 +548,11 @@
     .gray-bg{
         width: 100%;
     }
+    .contact-down{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
 }
 @media screen and (max-width:600px) {
     .pfp{
@@ -491,6 +586,9 @@
     .desc{
         font-size: 1.4rem;
     }
+    .input-name, .input-email, .input-sub, .input-message{
+        width: 97%;
+    }
 }
 @media screen and (max-width:500px) {
     .pfp{
@@ -517,6 +615,9 @@
     }
     .about-left{
         display: none;
+    }
+    .input-name, .input-email, .input-sub, .input-message{
+        width: 95%;
     }
     
 }
