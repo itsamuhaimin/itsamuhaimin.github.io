@@ -36,3 +36,11 @@ window.onscroll = ()=> {
 
     document.getElementById("scroll-in").style.height = scroll + "%";
 }
+
+// PRE-LOADER
+//preloader
+let loader = document.getElementById('pre-loader');
+window.addEventListener('load', ()=> {
+    loader.style.display = 'none';
+    document.getElementById('post-loader').style.display = 'inline-block'
+})
