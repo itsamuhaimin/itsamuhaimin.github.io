@@ -36,6 +36,7 @@
 .logo{
     width: 150px;
     padding: 10px 0;
+    cursor: pointer;
 }
 .navbar-main{
     position: fixed;
@@ -328,8 +329,71 @@
     margin-bottom: 10px;
 }
 .skills-container{
-    padding: 10vw;
+    padding: 10vw 0 5vw 0;
 }
+/* Projects start */
+.project-box{
+    width: 400px;
+    padding: 15px;
+    background-color: var(--bg);
+}
+.project-img{
+    width: 100%;
+}
+.pro-a{
+    font-size: 1.7rem;
+}
+.pro-b{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.project-boxes{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1vw;
+}
+.projects-container{
+    padding: 12vw 0 12vw 0;
+}
+.service-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services-desc{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.ico{
+    font-size: 2.5rem;
+}
+.lists-offer > ul > li{
+    /* list-style: none; */
+    font-size: 1.2rem;
+    margin-left: 24px;
+}
+.services{
+    padding: 25px;
+    background-color: var(--bg);
+    width: 390px;
+    border-bottom: 5px solid var(--primary);
+    border-radius: 8px;
+}
+.services-boxes{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.services-container{
+    padding: 5vw 0 15vw 0;
+}
+
 
 /* Responsiveness Responsiveness Responsiveness Responsiveness */
 @media screen and (max-width:1350px) {
@@ -386,7 +450,7 @@
         cursor: pointer;
     }
     .skills-container{
-        padding: 0;
+        padding-top: 80px;
     }
     .edu-box, .skill-middle{
         width: 39vw;
@@ -454,13 +518,6 @@
     .about-left{
         display: none;
     }
-    /* .logo-circle{
-        width: 150px;
-        height: 150px;
-    }
-    .circle{
-        width: 300px;
-        height: 300px;
-    } */
+    
 }
 /* Responsiveness Responsiveness Responsiveness Responsiveness */
