@@ -1,3 +1,8 @@
+// Dark Mode Toggler
+function dark() {
+    var element = document.body;
+    element.classList.toggle("light-mode");
+}
 // Orbiting Animated Text Splitter
 const text = document.querySelector('.text p');
 text.innerHTML = text.innerHTML.split("").map((char, i) => 
@@ -18,4 +23,16 @@ document.getElementById('close-menu-btn').addEventListener('click', ()=> {
 // Scroll Top
 function home(){
     window.scrollTo(0, 0);
+}
+function scrollToTop(){
+    window.scrollTo(0, 0);
+}
+// Scroll Meter
+window.onscroll = ()=> {
+    let pos = document.documentElement.scrollTop;
+    let calc_height = document.documentElement.scrollHeight - 
+        document.documentElement.clientHeight;
+    let scroll = pos * 100 / calc_height;
+
+    document.getElementById("scroll-in").style.height = scroll + "%";
 }
