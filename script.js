@@ -1,5 +1,13 @@
 // Dark Mode Toggler
 function dark() {
+    //icon changer
+    let xcon = document.getElementById('dark').innerHTML;
+    if(xcon == '<i class="fa-solid fa-moon"></i>'){
+       document.getElementById('dark').innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }else if(xcon == '<i class="fa-solid fa-sun"></i>'){
+        document.getElementById('dark').innerHTML = '<i class="fa-solid fa-moon"></i>';
+    }
+    //actual dark mode toggler
     var element = document.body;
     element.classList.toggle("light-mode");
 }
@@ -8,7 +16,7 @@ const text = document.querySelector('.text p');
 text.innerHTML = text.innerHTML.split("").map((char, i) => 
     `<span style="transform: rotate(${i * 14}deg)">${char}</span>`).join("");
 
-// Dark Mode
+// Menu Button 
 document.getElementById('open-menu-btn').addEventListener('click', ()=> {
     document.getElementById('nav-btn').style.display = 'flex';
     document.getElementById('close-menu-btn').style.display = 'inline-block';
@@ -38,7 +46,6 @@ window.onscroll = ()=> {
 }
 
 // PRE-LOADER
-//preloader
 let loader = document.getElementById('pre-loader');
 window.addEventListener('load', ()=> {
     loader.style.display = 'none';
