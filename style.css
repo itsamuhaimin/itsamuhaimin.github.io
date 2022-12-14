@@ -178,7 +178,7 @@ body{
 .link:hover{
     color: var(--primary);
 }
-.fa-moon{
+.fa-moon, .fa-sun{
     color: var(--text);
     font-size: 1.5rem;
     cursor: pointer;
