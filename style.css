@@ -112,13 +112,15 @@ body{
     font-weight: bold;
   }
 /* SCROLL */
+
 /* LIGHT MODE */
 .light-mode{
     --background: #1e1e1e;
     --bg: #181818;
     --text: whitesmoke;
 }
-/* LIGHT MODE */
+/* LIGHT MODE END */
+
 /* Scrollbar Start */
 /* width */
 ::-webkit-scrollbar {
@@ -194,6 +196,7 @@ body{
     border: none;
     background-color: transparent;
     font-size: 2rem;
+    color: var(--text);
     display: none;
 }
 
@@ -589,6 +592,11 @@ body{
 .contact-right-header{
     font-size: 1.8rem;
 }
+.cv:hover, .lets-talk:hover{
+    background-color: var(--bg);
+    color: var(--primary);
+    /* border: 3px solid var(--primary); */
+}
 
 
 /* Responsiveness Responsiveness Responsiveness Responsiveness */
@@ -636,7 +644,7 @@ body{
         right: 4.5%;
         gap: 0;
     }
-    .links a, .fa-moon{
+    .links a, .fa-moon, .fa-sun{
         background-color: var(--primary);
         color: var(--bg);
         width: 100px;
