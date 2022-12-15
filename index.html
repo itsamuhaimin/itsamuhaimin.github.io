@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- [Animation On Scroll: CSS] -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <!-- PRE-LOADER PRE-LOADER PRE-LOADER -->
@@ -53,7 +55,7 @@
             <a href="./index.html"><img src="./img/logo-prototype-2.png" alt="" class="logo"></a>
             <!-- middle links -->
             <div class="links" id="nav-btn">
-                <a href="#home" class="link" onclick="home()">HOME</a>
+                <a href="#home" class="link" onclick="scrollToTop()">HOME</a>
                 <a href="#about" class="link">ABOUT</a>
                 <a href="#skill" class="link">SKILLS</a>
                 <a href="#projects" class="link">PROJECTS</a>
@@ -77,7 +79,7 @@
 <!-- Home Page -->
     <div class="home container">
         <div class="left-home">
-            <div class="social">
+            <div class="social" data-aos="fade-down" data-aos-duration="3000">
                 <a href="https://www.linkedin.com/in/itsamuhaimin/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="https://www.instagram.com/itsamuhaimin/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.facebook.com/itsamuhaimin" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
@@ -117,7 +119,7 @@
         </div>
     </div>
     <div class="about-content">
-        <div class="about-left">
+        <div class="about-left" data-aos="fade-up" data-aos-offset="500" data-aos-duration="2500">
             <div class="circle">
                 <div class="logo-circle"></div>
                 <div class="text">
@@ -125,7 +127,7 @@
                 </div>
             </div>
         </div>
-        <div class="about-right">
+        <div class="about-right" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
             <div class="name-title-about">
                 <div class="name-about">
                     I'm <span class="highlighter">Muhammad Muhaimin Ahmed Al-Amin</span>
@@ -186,7 +188,7 @@
     </div>
     <div class="skills">
         <!-- Education -->
-        <div class="skills-education">
+        <div class="skills-education" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
             <p class="skills-label">Education</p>
             <div class="edu">
                 <div class="edu-box">
@@ -202,7 +204,7 @@
             </div>
         </div>
         <!-- Skills -->
-        <div class="skills-pure">
+        <div class="skills-pure" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
             <p class="skills-label">Skills</p>
             <div class="skill-middle">
                 <div class="skill-title b">
@@ -235,7 +237,8 @@
                 </div>
             </div>
         </div>
-        <div class="certificates-skills">
+        <!-- CERTIFICATE -->
+        <div class="certificates-skills" data-aos="fade-up" data-aos-offset="400" data-aos-duration="3000">
             <p class="skills-label">Certificates</p>
             <div class="edu">
                 <div class="edu-box">
@@ -268,17 +271,20 @@
         </div>
         <!-- upper title end -->
         <div class="project-boxes container">
-            <div class="project-box">
+            <!-- Project 1 -->
+            <div class="project-box" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
                 <img src="./img/p-1.png" class="project-img">
                 <h1 class="pro-a">Logo design for 'X' Inc.</h1>
                 <p class="pro-b highlighter">Branding</p>
             </div>
-            <div class="project-box">
+            <!-- Project 2 -->
+            <div class="project-box" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
                 <img src="./img/p-2.png" class="project-img">
                 <h1 class="pro-a">Illustration for 'Y' Inc.</h1>
                 <p class="pro-b highlighter">Graphics Design</p>
             </div>
-            <div class="project-box">
+            <!-- Project 3 -->
+            <div class="project-box" data-aos="fade-up" data-aos-offset="400" data-aos-duration="3000">
                 <img src="./img/p-3.png" class="project-img">
                 <h1 class="pro-a">User Interface for 'Z' Inc.</h1>
                 <p class="pro-b highlighter">UI/UX Design</p>
@@ -302,7 +308,7 @@
     <!-- upper title end -->
     <div class="services-boxes">
         <!-- UI UX DESIGN -->
-        <div class="services">
+        <div class="services" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
             <div class="service-header">
                 <i class="fa-solid fa-pen-ruler ico"></i>
                 <h1 class="services-title">UI/UX Design</h1>
@@ -319,7 +325,7 @@
             </div>
         </div>
         <!-- GRAPHICS DESIGN -->
-        <div class="services">
+        <div class="services" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
             <div class="service-header">
                 <i class="fa-solid fa-brush ico"></i>
                 <h1 class="services-title">Graphics Design</h1>
@@ -331,12 +337,11 @@
                     <li>Banner design</li>
                     <li>Marketing Design</li>
                     <li>Print Design</li>
-                    <li>Packaging & Covers</li>
                 </ul>
             </div>
         </div>
         <!-- BRANDING -->
-        <div class="services">
+        <div class="services" data-aos="fade-up" data-aos-offset="400" data-aos-duration="3000">
             <div class="service-header">
                 <i class="fa-solid fa-copyright ico"></i>
                 <h1 class="services-title">Branding</h1>
@@ -348,6 +353,7 @@
                     <li>Logo Design</li>
                     <li>Gaming Arts</li>
                     <li>Stream Materials</li>
+                    <li>Packaging & Covers</li>
                 </ul>
             </div>
         </div>
@@ -368,19 +374,22 @@
     </div>
     <!-- upper title end -->
     <div class="client-boxes">
-        <div class="client">
+        <!-- Client 1 -->
+        <div class="client" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
             <img src="./img/c-1.jpg" alt="" class="client-img">
             <p class="client-say">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt alias similique dolores ex ea nobis deleniti consequatur error soluta?</p>
             <p class="client-name">Zeus</p>
             <p class="client-workplace highlighter">Microsoft</p>
         </div>
-        <div class="client">
+        <!-- Client 2 -->
+        <div class="client" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
             <img src="./img/c-2.png" alt="" class="client-img">
             <p class="client-say">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt alias similique dolores ex ea nobis deleniti consequatur error soluta?</p>
             <p class="client-name">Prometheus</p>
             <p class="client-workplace highlighter">Google</p>
         </div>
-        <div class="client">
+        <!-- Client 3 -->
+        <div class="client" data-aos="fade-up" data-aos-offset="400" data-aos-duration="3000">
             <img src="./img/c-3.png" alt="" class="client-img">
             <p class="client-say">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt alias similique dolores ex ea nobis deleniti consequatur error soluta?</p>
             <p class="client-name">Apollo</p>
@@ -404,7 +413,7 @@
     <!-- upper title end -->
     <div class="contact-left">
         <div class="contact-down">
-            <div class="contact-lefts">
+            <div class="contact-lefts" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
                 <h1 class="contact-left-header">
                     Let's discuss your next project.
                 </h1>
@@ -449,7 +458,7 @@
                 </div>
             </div>
             <!-- RIGHT BOXES -->
-            <div class="contact-right-boxes">
+            <div class="contact-right-boxes" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
                 <h2 class="contact-right-header">
                     I am always open to discussing design work or partnerships.
                 </h2>
@@ -468,6 +477,12 @@
 </div>
 </div>
 <!-- JS Linking -->
+<!-- AOS Library Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- AOS Library Script -->
 <script src="script.js"></script>
 </body>
 </html>
