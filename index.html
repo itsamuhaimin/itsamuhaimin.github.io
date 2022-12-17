@@ -462,15 +462,15 @@
                 <h2 class="contact-right-header">
                     I am always open to discussing design work or partnerships.
                 </h2>
-                <div class="inputs">
-                    <input type="text" placeholder="Name" class="input-name" required>
-                    <input type="text" class="input-email" placeholder="Email" required>
-                    <input type="text" class="input-sub" placeholder="Subject" required>
-                    <textarea name="Write something ..." id="" class="input-message" required placeholder="Write something ..."></textarea>
-                </div>
-                <button class="submit lets-talk">
+                <form action="https://formspree.io/f/mqkozepl" method="POST" class="inputs">
+                    <input spellcheck="false" type="text" name="name" placeholder="Name" class="input-name" required>
+                    <input spellcheck="false" type="text" name="email" class="input-email" placeholder="Email" required>
+                    <input spellcheck="false" type="text" name="subject" class="input-sub" placeholder="Subject" required>
+                    <textarea name="message" id="" class="input-message" required placeholder="Write something ..."></textarea>
+                <button class="submit lets-talk" name="submit">
                     Submit <i class="fa-regular fa-circle-check"></i>
                 </button>
+                </form>
             </div>
         </div>
     </div>
