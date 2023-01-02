@@ -75,6 +75,16 @@ window.addEventListener("load", () => {
   document.getElementById("post-loader").style.display = "inline-block";
 });
 
+// visitor counter
+const countEl = document.getElementById("views");
 
+visit();
+function visit() {
+  fetch("https://api.countapi.xyz/update/itsamuhaimin/visits/?amount=1")
+    .then((res) => res.json())
+    .then((res) => {
+      countEl.innerHTML = res.value;
+    });
+}
 
 // https://github.com/irfanshadikrishad

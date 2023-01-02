@@ -677,6 +677,10 @@ body {
 .rotate{
     transform: rotate(2deg);
 }
+#views{
+    font-weight: 500;
+    opacity: 90%;
+}
 
 /* Responsiveness Responsiveness Responsiveness Responsiveness */
 @media screen and (max-width: 1440px) {
