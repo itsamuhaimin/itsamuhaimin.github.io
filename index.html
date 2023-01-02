@@ -2,487 +2,673 @@
 <!-- Created Date: Dec 12, 2022 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title -->
     <title>Mohammad Muhaimin Ahmed Al-Amin | Portfolio</title>
     <!-- Meta Data -->
-    <meta name="description" content="I am Mohammad Muhaimin Ahmed Al-Amin. I have been working as a Graphics & UI/UX Designer for 2 years, working with brands and businesses to make it visually attractive to the clients.">
+    <meta
+      name="description"
+      content="I am Mohammad Muhaimin Ahmed Al-Amin. I have been working as a Graphics & UI/UX Designer for 2 years, working with brands and businesses to make it visually attractive to the clients."
+    />
     <!-- Keywords -->
-    <meta name="keywords" content="Mohammad Muhaimin Ahmed Al-Amin, Muhaimin, itsamuhaimin, Al-Amin, UI UX Designer in Sylhet, Proffesional UI UX Designer, Irfan Shadik Rishad, irfanshadikofficial, Web Designer Irfan, Irfan, Shadik, Rishad,">
+    <meta
+      name="keywords"
+      content="Mohammad Muhaimin Ahmed Al-Amin, Muhaimin, itsamuhaimin, Al-Amin, UI UX Designer in Sylhet, Proffesional UI UX Designer, Irfan Shadik Rishad, irfanshadikofficial, Web Designer Irfan, Irfan, Shadik, Rishad,"
+    />
     <!-- Author -->
-    <meta name="author" content="Irfan Shadik Rishad, irfanshadikrishad, irfanshadikofficial">
+    <meta
+      name="author"
+      content="Irfan Shadik Rishad, irfanshadikrishad, irfanshadikofficial"
+    />
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
-    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
     <!-- CSS Linking -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- [Animation On Scroll: CSS] -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
-<!-- PRE-LOADER PRE-LOADER PRE-LOADER -->
-<div id="pre-loader">
-    <div class="spinner">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- PRE-LOADER PRE-LOADER PRE-LOADER -->
+    <div id="pre-loader">
+      <div class="spinner">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
         <div></div>
         <div></div>
+      </div>
     </div>
-</div>
-<!-- POST-LOADER POST-LOADER POST-LOADER -->
-<div id="post-loader">
-    <!-- Scroll Start -->
-    <div id="scroll-container">
+    <!-- POST-LOADER POST-LOADER POST-LOADER -->
+    <div id="post-loader">
+      <!-- Scroll Start -->
+      <div id="scroll-container">
         <div id="scroll-out">
-            <div id="scroll-in">
-            </div>
+          <div id="scroll-in"></div>
         </div>
         <button onclick="scrollToTop()" id="scroll-top">TOP</button>
-    </div>
-<!-- Scroll End -->
-    <div class="navbar-main">
+      </div>
+      <!-- Scroll End -->
+      <div class="navbar-main">
         <div class="navbar container">
-            <!-- links -->
-            <a href="./index.html"><img src="./img/logo-prototype-2.png" alt="" class="logo"></a>
-            <!-- middle links -->
-            <div class="links" id="nav-btn">
-                <a href="#home" class="link" onclick="scrollToTop()">HOME</a>
-                <a href="#about" class="link">ABOUT</a>
-                <a href="#skill" class="link">SKILLS</a>
-                <a href="#projects" class="link">PROJECTS</a>
-                <a href="#services" class="link">SERVICES</a>
-                <a href="#client" class="link">CLIENT</a>
-                <a href="#contact" class="link">CONTACT</a>
-                <!-- dark mode button -->
-                <button class="dark" id="dark" onclick="dark()"><i class="fa-solid fa-moon"></i></button>
-            </div>
-            <!-- Responsible Buttons -->
-            <div class="resp-btn">
-                <button id="open-menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-                <button id="close-menu-btn">
-                    <i class="fa-solid fa-bars-staggered"></i>
-                </button>
-            </div>
+          <!-- links -->
+          <a href="./index.html"
+            ><img src="./img/logo-prototype-2.png" alt="" class="logo"
+          /></a>
+          <!-- middle links -->
+          <div class="links" id="nav-btn">
+            <a href="#home" class="link" onclick="scrollToTop()">HOME</a>
+            <a href="#about" class="link">ABOUT</a>
+            <a href="#skill" class="link">SKILLS</a>
+            <a href="#projects" class="link">PROJECTS</a>
+            <a href="#services" class="link">SERVICES</a>
+            <a href="#client" class="link">CLIENT</a>
+            <a href="#contact" class="link">CONTACT</a>
+            <!-- dark mode button -->
+            <button class="dark" id="dark" onclick="dark()">
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
+          <!-- Responsible Buttons -->
+          <div class="resp-btn">
+            <button id="open-menu-btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <button id="close-menu-btn">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+          </div>
         </div>
-    </div>
-<!-- Home Page -->
-    <div class="home container">
+      </div>
+      <!-- Home Page -->
+      <div class="home container">
         <div class="left-home">
-            <div class="social" data-aos="fade-down" data-aos-duration="3000">
-                <a href="https://www.linkedin.com/in/itsamuhaimin/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/itsamuhaimin/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/itsamuhaimin" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+          <div class="social" data-aos="fade-down" data-aos-duration="3000">
+            <a href="https://www.linkedin.com/in/itsamuhaimin/" target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://www.instagram.com/itsamuhaimin/" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/itsamuhaimin" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="middle-info">
+            <div class="name-title">
+              <h1 class="name">
+                Hi, I'm <span class="highlighter">Muhaimin</span>
+              </h1>
+              <h3 class="title">UI/UX Designer</h3>
             </div>
-            <div class="middle-info">
-                <div class="name-title">
-                    <h1 class="name">Hi, I'm <span class="highlighter">Muhaimin</span></h1>
-                    <h3 class="title">UI/UX Designer</h3>
-                </div>
-                <div class="info">
-                    I have been working as a Graphics & UI/UX Designer for 2 years, working with brands and businesses to make it visually attractive to the clients.
-                </div>
-                <div class="contact-btn">
-                    <a href="#contact">
-                        <button class="lets-talk">
-                            Lets Talk!
-                            <i class="fa-solid fa-angles-right"></i>
-                        </button>
-                    </a>
-                </div>
+            <div class="info">
+              I have been working as a Graphics & UI/UX Designer for 2 years,
+              working with brands and businesses to make it visually attractive
+              to the clients.
             </div>
+            <div class="contact-btn">
+              <a href="#contact">
+                <button class="lets-talk">
+                  Lets Talk!
+                  <i class="fa-solid fa-angles-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="pfp-container">
-            <img src="./img/pfp-prototype.jpg" alt="" class="pfp">
+          <img src="./img/pfp-prototype.jpg" alt="" class="pfp" />
         </div>
-    </div>
-<!-- About Me Page -->
-<div class="about-me-top container" id="about">
-    <div class="about-text">
-        <p class="about-bg">
-            About Me
-        </p>
-        <p class="about">
-            About Me
-        </p>
-        <div class="h-bar">
+      </div>
+      <!-- About Me Page -->
+      <div class="about-me-top container" id="about">
+        <div class="about-text">
+          <p class="about-bg">About Me</p>
+          <p class="about">About Me</p>
+          <div class="h-bar"></div>
         </div>
-    </div>
-    <div class="about-content">
-        <div class="about-left" data-aos="fade-up" data-aos-offset="500" data-aos-duration="2500">
+        <div class="about-content">
+          <div
+            class="about-left"
+            data-aos="fade-up"
+            data-aos-offset="500"
+            data-aos-duration="2500"
+          >
             <div class="circle">
-                <div class="logo-circle"></div>
-                <div class="text">
-                    <p class="tagline">Muhaimin | UI/UX Designer|</p>
-                </div>
+              <div class="logo-circle"></div>
+              <div class="text">
+                <p class="tagline">Muhaimin | UI/UX Designer|</p>
+              </div>
             </div>
-        </div>
-        <div class="about-right" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
+          </div>
+          <div
+            class="about-right"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="1000"
+          >
             <div class="name-title-about">
-                <div class="name-about">
-                    I'm <span class="highlighter">Muhammad Muhaimin Ahmed Al-Amin</span>
-                </div>
-                <div class="title-about">
-                    A lead <span class="highlighter">UI/UX Designer</span> based in <span class="highlighter">Sylhet</span>
-                </div>
+              <div class="name-about">
+                I'm
+                <span class="highlighter">Muhammad Muhaimin Ahmed Al-Amin</span>
+              </div>
+              <div class="title-about">
+                A lead <span class="highlighter">UI/UX Designer</span> based in
+                <span class="highlighter">Sylhet</span>
+              </div>
             </div>
             <div class="hr-desc">
-                <div class="desc">
-                    I have been working as a Graphics & UI/UX Designer for 2 years, working with brands and businesses to make it visually attractive to the clients.
-                </div>
-                <hr>
+              <div class="desc">
+                I have been working as a Graphics & UI/UX Designer for 2 years,
+                working with brands and businesses to make it visually
+                attractive to the clients.
+              </div>
+              <hr />
             </div>
             <div class="about-box">
-                <div class="about-1">
-                    <p class="about-a">2+</p>
-                    <p class="about-b">Years of Experience</p>
-                </div>
-                <div class="about-1">
-                    <p class="about-a">1K+</p>
-                    <p class="about-b">Happy Customer 😄</p>
-                </div>
-                <div class="about-1">
-                    <p class="about-a">10+</p>
-                    <p class="about-b">Successful Project 🎉</p>
-                </div>
-                <div class="about-1">
-                    <p class="about-a">1K+</p>
-                    <p class="about-b">Cups of Coffee ☕</p>
-                </div>
+              <div class="about-1">
+                <p class="about-a">2+</p>
+                <p class="about-b">Years of Experience</p>
+              </div>
+              <div class="about-1">
+                <p class="about-a">1K+</p>
+                <p class="about-b">Happy Customer 😄</p>
+              </div>
+              <div class="about-1">
+                <p class="about-a">10+</p>
+                <p class="about-b">Successful Project 🎉</p>
+              </div>
+              <div class="about-1">
+                <p class="about-a">1K+</p>
+                <p class="about-b">Cups of Coffee ☕</p>
+              </div>
             </div>
             <div class="btn-cv">
-                <button class="cv">
-                    Download CV <i class="fa-solid fa-download"></i>
-                </button>
+              <button class="cv">
+                Download CV <i class="fa-solid fa-download"></i>
+              </button>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-<!-- Skill Page Start -->
-<div class="skills-container container" id="skill">
-    <!-- upper title -->
-    <div class="about-text">
-        <p class="about-bg">
-            Skills
-        </p>
-        <p class="about">
-            Skills
-        </p>
-        <div class="h-bar">
-        </div>
-    </div>
-    <!-- Text -->
-    <div class="skills-heading">
-        <h1 class="header-skills">Education & Skills</h1>
-        <p class="text-skills">For more than 2 years I have been accomplishing enough with mordern UI/UX Design, New generation technologies and tools.</p>
-    </div>
-    <div class="skills">
-        <!-- Education -->
-        <div class="skills-education" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
-            <p class="skills-label">Education</p>
-            <div class="edu">
-                <div class="edu-box">
-                    <p class="edu-year">2022-Present</p>
-                    <p class="edu-sub"><span class="highlighter b">BSc in Phylosophy</span>
-                        - Murarichad College, Sylhet</p>
-                </div>
-                <div class="edu-box">
-                    <p class="edu-year">2018-2022</p>
-                    <p class="edu-sub"><span class="highlighter b">HSC</span>
-                        - Sylhet Govt. College, Sylhet</p>
-                </div>
-            </div>
-        </div>
-        <!-- Skills -->
-        <div class="skills-pure" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
-            <p class="skills-label">Skills</p>
-            <div class="skill-middle">
-                <div class="skill-title b">
-                    <p class="app-title">Figma</p>
-                    <p class="app-progress">75%</p>
-                </div>
-                <div class="gray-bg">
-                    <div class="progress-skill">
-                    </div>
-                </div>
-            </div>
-            <div class="skill-middle">
-                <div class="skill-title b">
-                    <p class="app-title">Photoshop</p>
-                    <p class="app-progress">85%</p>
-                </div>
-                <div class="gray-bg">
-                    <div class="progress-skill" style="width: 85%;">
-                    </div>
-                </div>
-            </div>
-            <div class="skill-middle">
-                <div class="skill-title b">
-                    <p class="app-title">Illustrator</p>
-                    <p class="app-progress">90%</p>
-                </div>
-                <div class="gray-bg">
-                    <div class="progress-skill" style="width: 90%;">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- CERTIFICATE -->
-        <div class="certificates-skills" data-aos="fade-up" data-aos-offset="400" data-aos-duration="3000">
-            <p class="skills-label">Certificates</p>
-            <div class="edu">
-                <div class="edu-box">
-                    <p class="edu-year">2022</p>
-                    <p class="edu-sub"><span class="highlighter b">Advanced Graphics Design</span>
-                        - Sheikh Kamal IT Training & Incubation Center Project, Sylhet</p>
-                </div>
-                <div class="edu-box">
-                    <p class="edu-year">2020</p>
-                    <p class="edu-sub"><span class="highlighter b">Basic UI/UX</span>
-                        - Udemy</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Projects Starts Here-->
-<div class="projects-container" id="projects">
-    <div class="upper-pro">
+      </div>
+      <!-- Skill Page Start -->
+      <div class="skills-container container" id="skill">
         <!-- upper title -->
         <div class="about-text">
-            <p class="about-bg">
-                Projects
-            </p>
-            <p class="about">
-                Projects
-            </p>
-            <div class="h-bar">
-            </div>
+          <p class="about-bg">Skills</p>
+          <p class="about">Skills</p>
+          <div class="h-bar"></div>
         </div>
-        <!-- upper title end -->
-        <div class="project-boxes container">
+        <!-- Text -->
+        <div class="skills-heading">
+          <h1 class="header-skills">Education & Skills</h1>
+          <p class="text-skills">
+            For more than 2 years I have been accomplishing enough with mordern
+            UI/UX Design, New generation technologies and tools.
+          </p>
+        </div>
+        <div class="skills">
+          <!-- Education -->
+          <div
+            class="skills-education"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="1000"
+          >
+            <p class="skills-label">Education</p>
+            <div class="edu">
+              <div class="edu-box">
+                <p class="edu-year">2022-Present</p>
+                <p class="edu-sub">
+                  <span class="highlighter b">BSc in Phylosophy</span> -
+                  Murarichad College, Sylhet
+                </p>
+              </div>
+              <div class="edu-box">
+                <p class="edu-year">2018-2022</p>
+                <p class="edu-sub">
+                  <span class="highlighter b">HSC</span> - Sylhet Govt. College,
+                  Sylhet
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Skills -->
+          <div
+            class="skills-pure"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="2000"
+          >
+            <p class="skills-label">Skills</p>
+            <div class="skill-middle">
+              <div class="skill-title b">
+                <p class="app-title">Figma</p>
+                <p class="app-progress">75%</p>
+              </div>
+              <div class="gray-bg">
+                <div class="progress-skill"></div>
+              </div>
+            </div>
+            <div class="skill-middle">
+              <div class="skill-title b">
+                <p class="app-title">Photoshop</p>
+                <p class="app-progress">85%</p>
+              </div>
+              <div class="gray-bg">
+                <div class="progress-skill" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-middle">
+              <div class="skill-title b">
+                <p class="app-title">Illustrator</p>
+                <p class="app-progress">90%</p>
+              </div>
+              <div class="gray-bg">
+                <div class="progress-skill" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <!-- CERTIFICATE -->
+          <div
+            class="certificates-skills"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="3000"
+          >
+            <p class="skills-label">Certificates</p>
+            <div class="edu">
+              <div class="edu-box">
+                <p class="edu-year">2022</p>
+                <p class="edu-sub">
+                  <span class="highlighter b">Advanced Graphics Design</span> -
+                  Sheikh Kamal IT Training & Incubation Center Project, Sylhet
+                </p>
+              </div>
+              <div class="edu-box">
+                <p class="edu-year">2020</p>
+                <p class="edu-sub">
+                  <span class="highlighter b">Basic UI/UX</span> - Udemy
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projects Starts Here-->
+      <div class="projects-container" id="projects">
+        <div class="upper-pro">
+          <!-- upper title -->
+          <div class="about-text">
+            <p class="about-bg">Projects</p>
+            <p class="about">Projects</p>
+            <div class="h-bar"></div>
+          </div>
+          <!-- upper title end -->
+          <div class="project-boxes container">
             <!-- Project 1 -->
-            <div class="project-box" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
-                <img src="./img/p-1.png" class="project-img">
-                <h1 class="pro-a">Logo design for 'X' Inc.</h1>
-                <p class="pro-b highlighter">Branding</p>
+            <div
+              class="project-box"
+              data-aos="fade-up"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <img src="./img/p-1.png" class="project-img" />
+              <h1 class="pro-a">Logo design for 'X' Inc.</h1>
+              <p class="pro-b highlighter">Branding</p>
             </div>
             <!-- Project 2 -->
-            <div class="project-box" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
-                <img src="./img/p-2.png" class="project-img">
-                <h1 class="pro-a">Illustration for 'Y' Inc.</h1>
-                <p class="pro-b highlighter">Graphics Design</p>
+            <div
+              class="project-box"
+              data-aos="fade-up"
+              data-aos-offset="400"
+              data-aos-duration="2000"
+            >
+              <img src="./img/p-2.png" class="project-img" />
+              <h1 class="pro-a">Illustration for 'Y' Inc.</h1>
+              <p class="pro-b highlighter">Graphics Design</p>
             </div>
             <!-- Project 3 -->
-            <div class="project-box" data-aos="fade-up" data-aos-offset="400" data-aos-duration="3000">
-                <img src="./img/p-3.png" class="project-img">
-                <h1 class="pro-a">User Interface for 'Z' Inc.</h1>
-                <p class="pro-b highlighter">UI/UX Design</p>
+            <div
+              class="project-box"
+              data-aos="fade-up"
+              data-aos-offset="400"
+              data-aos-duration="3000"
+            >
+              <img src="./img/p-3.png" class="project-img" />
+              <h1 class="pro-a">User Interface for 'Z' Inc.</h1>
+              <p class="pro-b highlighter">UI/UX Design</p>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-<!-- Services Start -->
-<div class="services-container container" id="services">
-    <!-- upper title -->
-    <div class="about-text">
-        <p class="about-bg">
-            Services
-        </p>
-        <p class="about">
-            Services
-        </p>
-        <div class="h-bar">
+      </div>
+      <!-- Services Start -->
+      <div class="services-container container" id="services">
+        <!-- upper title -->
+        <div class="about-text">
+          <p class="about-bg">Services</p>
+          <p class="about">Services</p>
+          <div class="h-bar"></div>
         </div>
-    </div>
-    <!-- upper title end -->
-    <div class="services-boxes">
-        <!-- UI UX DESIGN -->
-        <div class="services" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
+        <!-- upper title end -->
+        <div class="services-boxes">
+          <!-- UI UX DESIGN -->
+          <div
+            class="services"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="1000"
+          >
             <div class="service-header">
-                <i class="fa-solid fa-pen-ruler ico"></i>
-                <h1 class="services-title">UI/UX Design</h1>
-                <div class="h-bar"></div>
+              <i class="fa-solid fa-pen-ruler ico"></i>
+              <h1 class="services-title">UI/UX Design</h1>
+              <div class="h-bar"></div>
             </div>
             <p class="services-desc">Here's what i offer —</p>
             <div class="lists-offer">
-                <ul>
-                    <li>Products Development</li>
-                    <li>Usability Research</li>
-                    <li>Product Testing</li>
-                    <li>Marketing</li>
-                </ul>
+              <ul>
+                <li>Products Development</li>
+                <li>Usability Research</li>
+                <li>Product Testing</li>
+                <li>Marketing</li>
+              </ul>
             </div>
-        </div>
-        <!-- GRAPHICS DESIGN -->
-        <div class="services" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
+          </div>
+          <!-- GRAPHICS DESIGN -->
+          <div
+            class="services"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="2000"
+          >
             <div class="service-header">
-                <i class="fa-solid fa-brush ico"></i>
-                <h1 class="services-title">Graphics Design</h1>
-                <div class="h-bar"></div>
+              <i class="fa-solid fa-brush ico"></i>
+              <h1 class="services-title">Graphics Design</h1>
+              <div class="h-bar"></div>
             </div>
             <p class="services-desc">Here's what i offer —</p>
             <div class="lists-offer">
-                <ul>
-                    <li>Banner design</li>
-                    <li>Marketing Design</li>
-                    <li>Print Design</li>
-                </ul>
+              <ul>
+                <li>Banner design</li>
+                <li>Marketing Design</li>
+                <li>Print Design</li>
+              </ul>
             </div>
-        </div>
-        <!-- BRANDING -->
-        <div class="services" data-aos="fade-up" data-aos-offset="400" data-aos-duration="3000">
+          </div>
+          <!-- BRANDING -->
+          <div
+            class="services"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="3000"
+          >
             <div class="service-header">
-                <i class="fa-solid fa-copyright ico"></i>
-                <h1 class="services-title">Branding</h1>
-                <div class="h-bar"></div>
+              <i class="fa-solid fa-copyright ico"></i>
+              <h1 class="services-title">Branding</h1>
+              <div class="h-bar"></div>
             </div>
             <p class="services-desc">Here's what i offer —</p>
             <div class="lists-offer">
-                <ul>
-                    <li>Logo Design</li>
-                    <li>Gaming Arts</li>
-                    <li>Stream Materials</li>
-                    <li>Packaging & Covers</li>
-                </ul>
+              <ul>
+                <li>Logo Design</li>
+                <li>Gaming Arts</li>
+                <li>Stream Materials</li>
+                <li>Packaging & Covers</li>
+              </ul>
             </div>
+          </div>
         </div>
-    </div>
-</div>
-<!-- CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT -->
-<div class="client-container container" id="client">
-    <!-- upper title -->
-    <div class="about-text">
-        <p class="about-bg">
-            Client
-        </p>
-        <p class="about">
-            Client
-        </p>
-        <div class="h-bar">
+      </div>
+      <!-- CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT -->
+      <div class="client-container container" id="client">
+        <!-- upper title -->
+        <div class="about-text">
+          <p class="about-bg">Client</p>
+          <p class="about">Client</p>
+          <div class="h-bar"></div>
         </div>
-    </div>
-    <!-- upper title end -->
-    <div class="client-boxes">
-        <!-- Client 1 -->
-        <div class="client" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
-            <img src="./img/c-1.jpg" alt="" class="client-img">
-            <p class="client-say">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt alias similique dolores ex ea nobis deleniti consequatur error soluta?</p>
+        <!-- upper title end -->
+        <div class="client-boxes">
+          <!-- Client 1 -->
+          <div
+            class="client"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="1000"
+          >
+            <img src="./img/c-1.jpg" alt="" class="client-img" />
+            <p class="client-say">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              nesciunt alias similique dolores ex ea nobis deleniti consequatur
+              error soluta?
+            </p>
             <p class="client-name">Zeus</p>
             <p class="client-workplace highlighter">Microsoft</p>
-        </div>
-        <!-- Client 2 -->
-        <div class="client" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
-            <img src="./img/c-2.png" alt="" class="client-img">
-            <p class="client-say">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt alias similique dolores ex ea nobis deleniti consequatur error soluta?</p>
+          </div>
+          <!-- Client 2 -->
+          <div
+            class="client"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="2000"
+          >
+            <img src="./img/c-2.png" alt="" class="client-img" />
+            <p class="client-say">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              nesciunt alias similique dolores ex ea nobis deleniti consequatur
+              error soluta?
+            </p>
             <p class="client-name">Prometheus</p>
             <p class="client-workplace highlighter">Google</p>
-        </div>
-        <!-- Client 3 -->
-        <div class="client" data-aos="fade-up" data-aos-offset="400" data-aos-duration="3000">
-            <img src="./img/c-3.png" alt="" class="client-img">
-            <p class="client-say">Lorem ipsum dolor sit amet consectetur adipisicing elit. A nesciunt alias similique dolores ex ea nobis deleniti consequatur error soluta?</p>
+          </div>
+          <!-- Client 3 -->
+          <div
+            class="client"
+            data-aos="fade-up"
+            data-aos-offset="400"
+            data-aos-duration="3000"
+          >
+            <img src="./img/c-3.png" alt="" class="client-img" />
+            <p class="client-say">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
+              nesciunt alias similique dolores ex ea nobis deleniti consequatur
+              error soluta?
+            </p>
             <p class="client-name">Apollo</p>
             <p class="client-workplace highlighter">IBM</p>
+          </div>
         </div>
-    </div>
-</div>
-<!-- CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT -->
-<div class="contact-container container" id="contact">
-    <!-- upper title -->
-    <div class="about-text">
-        <p class="about-bg">
-            Contact
-        </p>
-        <p class="about">
-            Contact
-        </p>
-        <div class="h-bar">
+      </div>
+      <!-- CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT CLIENT -->
+      <div class="contact-container container" id="contact">
+        <!-- upper title -->
+        <div class="about-text">
+          <p class="about-bg">Contact</p>
+          <p class="about">Contact</p>
+          <div class="h-bar"></div>
         </div>
-    </div>
-    <!-- upper title end -->
-    <div class="contact-left">
-        <div class="contact-down">
-            <div class="contact-lefts" data-aos="fade-up" data-aos-offset="400" data-aos-duration="2000">
-                <h1 class="contact-left-header">
-                    Let's discuss your next project.
-                </h1>
-                <div class="contact-left-boxes">
-                    <!-- box -->
+        <!-- upper title end -->
+        <div class="contact-left">
+          <div class="contact-down">
+            <div
+              class="contact-lefts"
+              data-aos="fade-up"
+              data-aos-offset="400"
+              data-aos-duration="2000"
+            >
+              <h1 class="contact-left-header">
+                Let's discuss your next project.
+              </h1>
+              <div class="contact-left-boxes">
+                <!-- box -->
                 <div class="contact-left-info">
-                    <div class="contact-left-box">
-                        <i class="fa-solid fa-phone c-icon"></i>
-                        <p class="contact-box-name">
-                            Phone
-                        </p>
-                        <p class="contact-box-desc">
-                            +8801601356726
-                        </p>
-                    </div>
+                  <div class="contact-left-box">
+                    <i class="fa-solid fa-phone c-icon"></i>
+                    <p class="contact-box-name">Phone</p>
+                    <p class="contact-box-desc">+8801601356726</p>
+                  </div>
                 </div>
                 <!-- box -->
                 <div class="contact-left-info">
-                    <div class="contact-left-box">
-                        <i class="fa-solid fa-at c-icon"></i>
-                        <p class="contact-box-name">
-                            Email
-                        </p>
-                        <p class="contact-box-desc">
-                            itsamuhaimin@gmail.com
-                        </p>
-                    </div>
+                  <div class="contact-left-box">
+                    <i class="fa-solid fa-at c-icon"></i>
+                    <p class="contact-box-name">Email</p>
+                    <p class="contact-box-desc">itsamuhaimin@gmail.com</p>
+                  </div>
                 </div>
                 <!-- box -->
                 <div class="contact-left-info">
-                    <div class="contact-left-box">
-                        <i class="fa-solid fa-location-dot c-icon"></i>
-                        <p class="contact-box-name">
-                            Address
-                        </p>
-                        <p class="contact-box-desc">
-                            Gotatikor, Kadamtoli, Sylhet
-                        </p>
-                    </div>
+                  <div class="contact-left-box">
+                    <i class="fa-solid fa-location-dot c-icon"></i>
+                    <p class="contact-box-name">Address</p>
+                    <p class="contact-box-desc">Gotatikor, Kadamtoli, Sylhet</p>
+                  </div>
                 </div>
                 <!-- box -->
-                </div>
+              </div>
             </div>
             <!-- RIGHT BOXES -->
-            <div class="contact-right-boxes" data-aos="fade-up" data-aos-offset="400" data-aos-duration="1000">
-                <h2 class="contact-right-header">
-                    I am always open to discussing design work or partnerships.
-                </h2>
-                <form action="https://formspree.io/f/mqkozepl" method="POST" class="inputs">
-                    <input spellcheck="false" type="text" name="name" placeholder="Name" class="input-name" required>
-                    <input spellcheck="false" type="text" name="email" class="input-email" placeholder="Email" required>
-                    <input spellcheck="false" type="text" name="subject" class="input-sub" placeholder="Subject" required>
-                    <textarea name="message" id="" class="input-message" required placeholder="Write something ..."></textarea>
+            <div
+              class="contact-right-boxes"
+              data-aos="fade-up"
+              data-aos-offset="400"
+              data-aos-duration="1000"
+            >
+              <h2 class="contact-right-header">
+                I am always open to discussing design work or partnerships.
+              </h2>
+              <form
+                action="https://formspree.io/f/mqkozepl"
+                method="POST"
+                class="inputs"
+              >
+                <input
+                  spellcheck="false"
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  class="input-name"
+                  required
+                />
+                <input
+                  spellcheck="false"
+                  type="text"
+                  name="email"
+                  class="input-email"
+                  placeholder="Email"
+                  required
+                />
+                <input
+                  spellcheck="false"
+                  type="text"
+                  name="subject"
+                  class="input-sub"
+                  placeholder="Subject"
+                  required
+                />
+                <textarea
+                  name="message"
+                  id=""
+                  class="input-message"
+                  required
+                  placeholder="Write something ..."
+                ></textarea>
                 <button class="submit lets-talk" name="submit">
-                    Submit <i class="fa-regular fa-circle-check"></i>
+                  Submit <i class="fa-regular fa-circle-check"></i>
                 </button>
-                </form>
+              </form>
             </div>
+          </div>
         </div>
+      </div>
+      <!-- FOOTER SECTION START -->
+      <div class="footer-container">
+        <div class="footer-main container">
+          <!-- Logo & Info -->
+          <div class="footer-item">
+            <img
+              src="./img/logo-prototype-2.png"
+              alt="itsamuhaimin logo"
+              draggable="false"
+              class="footer-logo"
+            />
+            <p class="footer-desc">
+              I'm Muhammad Muhaimin Ahmed Al-Amin A lead UI/UX Designer based in
+              Sylhet I have been working as a Graphics & UI/UX Designer for 2
+              years, working with brands and businesses to make it visually
+              attractive to the clients.
+            </p>
+          </div>
+          <!-- Navigation -->
+          <div class="footer-item">
+            <h1 class="footer-header">Navigation</h1>
+            <div class="footer-links">
+              <a class="footer-link" href="#home">Home</a>
+              <a class="footer-link" href="#about">About</a>
+              <a class="footer-link" href="#skills">Skills</a>
+              <a class="footer-link" href="#projects">Projects</a>
+              <a class="footer-link" href="#services">Services</a>
+              <a class="footer-link" href="#clients">Clients</a>
+            </div>
+          </div>
+          <!-- Stats -->
+          <div class="footer-item">
+            <h1 class="footer-header">Stats</h1>
+            <p class="stats">Views: <span id="views">1030</span></p>
+          </div>
+          <!-- Follow -->
+          <div class="footer-item">
+            <h1 class="footer-header">Follow Me</h1>
+            <div class="footer-follows">
+              <a class="footer-follow">
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a class="footer-follow">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a class="footer-follow">
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-</div>
-<!-- JS Linking -->
-<!-- AOS Library Script -->
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-<!-- AOS Library Script -->
-<script src="script.js"></script>
-</body>
+    <!-- JS Linking -->
+    <!-- AOS Library Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- AOS Library Script -->
+    <script src="script.js"></script>
+  </body>
 </html>
