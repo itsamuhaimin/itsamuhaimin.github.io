@@ -647,6 +647,9 @@ body {
   font-size: 1.1rem;
   color: var(--text);
 }
+.footer-link:hover{
+    color: var(--primary);
+}
 .stats {
   font-size: 1.1rem;
 }
@@ -663,6 +666,16 @@ body {
 }
 .footer-follow:hover {
   color: var(--primary);
+}
+.credit-main{
+    margin-top: 30px;
+}
+.credit{
+    display: flex;
+    flex-direction: column;
+}
+.rotate{
+    transform: rotate(2deg);
 }
 
 /* Responsiveness Responsiveness Responsiveness Responsiveness */
