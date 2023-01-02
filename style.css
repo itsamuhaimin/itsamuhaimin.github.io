@@ -355,7 +355,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 25%;
   background-color: var(--bg);
   padding: 15px 15px;
   color: var(--primary);
@@ -371,7 +370,8 @@ body {
   text-align: center;
 }
 .about-box {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
 .about-right {
@@ -790,6 +790,10 @@ body {
   .footer-item:nth-child(1) {
     width: auto;
   }
+  .edu-box,
+  .skill-middle {
+    width: 86vw;
+  }
 }
 @media screen and (max-width: 700px) {
   .text-skills {
@@ -889,6 +893,19 @@ body {
   .input-message {
     width: 95%;
   }
+  .about-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project-box,
+  .services,
+  .client {
+    width: 100%;
+  }
+  .footer-desc,
+  .footer-link,
+  .stats {
+    font-size: 1.3rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .about-bg {
@@ -911,9 +928,6 @@ body {
   .about-right {
     gap: 5px;
   }
-  .about-1 {
-    width: 40%;
-  }
   .home,
   .about-me-top,
   .skills-container,
@@ -923,13 +937,14 @@ body {
   .project-box,
   .services,
   .client {
-    width: 80vw;
+    width: 100%;
+  }
+  .edu-box,
+  .skill-middle {
+    width: 79.5vw;
   }
 }
 @media screen and (max-width: 350px) {
-  .about-1 {
-    width: 100%;
-  }
   .lets-talk,
   .cv {
     padding: 10px 20px;
