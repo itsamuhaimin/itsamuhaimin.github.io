@@ -149,7 +149,7 @@ body {
 }
 .navbar-main {
   position: fixed;
-  width: 100vw;
+  width: -webkit-fill-available;
   height: 60px;
   background-color: var(--bg);
   top: 0;
@@ -416,7 +416,9 @@ body {
   padding: 20vh 0;
 }
 
-/* SKILLS SECTION STARTS HERE */
+/* ------------------------- */
+/* SKILLS SECTION */
+/* ------------------------- */
 .text-skills {
   font-size: 1.5rem;
   width: 70%;
@@ -437,7 +439,6 @@ body {
   background-color: var(--bg);
   border-bottom: 3px solid var(--primary);
   border-radius: 8px;
-  width: 20.6vw;
 }
 .bold,
 .edu-year {
@@ -449,11 +450,12 @@ body {
   gap: 10px;
 }
 .skills {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 15px;
 }
 .gray-bg {
-  width: 400px;
+  width: 100%;
   height: 5px;
   background-color: lightgray;
 }
@@ -484,6 +486,11 @@ body {
 #tns1-mw {
   padding-top: 3vh;
 }
+.project__box__2 {
+  height: 300px;
+  background-color: var(--secondary);
+  padding: 10px;
+}
 .tns-controls > button {
   width: 40px;
   height: 40px;
@@ -500,7 +507,7 @@ body {
   flex-direction: column;
   position: absolute;
   z-index: 1;
-  right: -13px;
+  right: -45px;
   top: 40px;
   gap: 5px;
 }
@@ -594,7 +601,13 @@ body {
   margin-top: 20px;
   flex-wrap: wrap;
 }
-/* CONTACT CONTACT CONTACT CONTACT CONTACT */
+/* ------------------------- */
+/* CONTACT SECTION */
+/* ------------------------- */
+.contact {
+  text-decoration: none;
+  color: var(--text);
+}
 .contact-left-box {
   display: flex;
   flex-direction: column;
@@ -764,13 +777,6 @@ body {
   .client {
     width: 250px;
   }
-  .edu-box,
-  .skill-middle {
-    width: 330px;
-  }
-  .gray-bg {
-    width: 100%;
-  }
   .contact-lefts {
     width: 30%;
   }
@@ -780,15 +786,17 @@ body {
   .skills {
     flex-wrap: wrap;
   }
+  .text-skills {
+    width: auto;
+  }
+  .skills-heading {
+    padding-top: 2vh;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .about-content {
     flex-direction: column;
-  }
-  .edu-box,
-  .skill-middle {
-    width: 432px;
   }
 }
 
@@ -800,8 +808,27 @@ body {
     width: 100%;
   }
 }
-
+@media screen and (max-width: 1024px) {
+  .skills {
+    grid: none;
+  }
+  .project__box__2 {
+    height: 220px;
+  }
+  .project__title {
+    font-size: 1.3rem;
+  }
+}
 @media screen and (max-width: 980px) {
+  .contact-down {
+    flex-direction: column-reverse;
+  }
+  .contact-right-boxes {
+    width: 100%;
+  }
+  .contact-lefts {
+    width: 100%;
+  }
   .container {
     width: 90%;
   }
@@ -848,7 +875,7 @@ body {
   .input-email,
   .input-sub,
   .input-message {
-    width: 100%;
+    width: -webkit-fill-available;
   }
   .contact-down {
     gap: 30px;
@@ -859,10 +886,6 @@ body {
   }
   .footer-item:nth-child(1) {
     width: auto;
-  }
-  .edu-box,
-  .skill-middle {
-    width: 86vw;
   }
 }
 @media screen and (max-width: 700px) {
@@ -893,19 +916,6 @@ body {
   .text-skills {
     width: 100%;
   }
-  .edu-box,
-  .skill-middle {
-    width: 84.1vw;
-  }
-  .contact-down {
-    flex-direction: column-reverse;
-  }
-  .contact-right-boxes {
-    width: 100%;
-  }
-  .contact-lefts {
-    width: 100%;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -930,10 +940,6 @@ body {
   .text-skills {
     width: 100%;
     font-size: 1.4rem;
-  }
-  .edu-box,
-  .skill-middle {
-    width: 84vw;
   }
   .desc {
     font-size: 1.4rem;
@@ -974,10 +980,6 @@ body {
   .info {
     width: 100%;
     font-size: 1.2rem;
-  }
-  .edu-box,
-  .skill-middle {
-    width: 81.7vw;
   }
   .about-box {
     flex-wrap: wrap;
@@ -1037,19 +1039,11 @@ body {
   .client {
     width: 100%;
   }
-  .edu-box,
-  .skill-middle {
-    width: 79.5vw;
-  }
 }
 @media screen and (max-width: 350px) {
   .lets-talk,
   .cv {
     padding: 10px 20px;
-  }
-  .edu-box,
-  .skill-middle {
-    width: 75vw;
   }
 }
 /* Responsiveness Responsiveness Responsiveness Responsiveness */

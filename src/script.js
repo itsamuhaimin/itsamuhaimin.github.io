@@ -102,7 +102,7 @@ function visit() {
 // ----------------------
 var slider = tns({
   container: ".tiny_slider",
-  items: 3,
+  items: 2,
   gutter: 10,
   mouseDrag: true,
   touch: true,
@@ -112,6 +112,11 @@ var slider = tns({
     '<i class="fa-solid fa-circle-chevron-left"></i>',
     '<i class="fa-solid fa-circle-chevron-right"></i>',
   ],
+  responsive: {
+    770: {
+      items: 3,
+    },
+  },
 });
 
 // https://irfanshadikrishad.github.io
