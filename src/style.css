@@ -139,7 +139,7 @@ body {
 }
 /* SCROLLBAR DESIGN END */
 .container {
-  width: 70%;
+  width: 70% !important;
   margin: 0 auto;
 }
 .logo {
@@ -478,14 +478,44 @@ body {
 .skills-container {
   padding: 10vw 0 5vw 0;
 }
-/* Projects start */
-.project-box {
-  width: 400px;
-  padding: 15px;
-  background-color: var(--bg);
+/* ------------------------- */
+/* PROJECT SECTION */
+/* ------------------------- */
+#tns1-mw {
+  padding-top: 3vh;
 }
-.project-img {
+.tns-controls > button {
+  width: 40px;
+  height: 40px;
+  font-size: 2.2rem;
+  color: var(--primary);
+  background-color: transparent;
+  border: none;
+}
+.tns-outer {
+  position: relative;
+}
+.tns-controls {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  right: -13px;
+  top: 40px;
+  gap: 5px;
+}
+.project__img {
   width: 100%;
+}
+.project__title {
+  font-size: 1.5rem;
+  color: var(--text);
+}
+.project__tag {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--primary);
 }
 .pro-a {
   font-size: 1.7rem;
@@ -494,13 +524,7 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
 }
-.project-boxes {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1vw;
-}
+
 .projects-container {
   padding: 12vw 0 12vw 0;
 }
@@ -595,7 +619,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 11px;
 }
 .contact-down {
   margin-top: 20px;
@@ -635,7 +659,7 @@ body {
   outline: none;
 }
 .input-message {
-  height: 150px;
+  height: 175px;
 }
 .contact-right-header {
   font-size: 1.8rem;

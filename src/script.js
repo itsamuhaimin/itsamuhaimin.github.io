@@ -1,4 +1,6 @@
-// Dark Mode Toggler
+// ----------------------
+// DARK-MODE
+// ----------------------
 function dark() {
   //icon changer
   let xcon = document.getElementById("dark").innerHTML;
@@ -52,12 +54,16 @@ document.getElementById("close-menu-btn").addEventListener("click", () => {
   document.getElementById("open-menu-btn").style.display = "inline-block";
 });
 
-// Scroll Top
+// ----------------------
+// SCROLL-TO-TOP
+// ----------------------
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
 
-// Scroll Meter
+// ----------------------
+// SCROLL-METER
+// ----------------------
 window.onscroll = () => {
   let pos = document.documentElement.scrollTop;
   let calc_height =
@@ -68,14 +74,18 @@ window.onscroll = () => {
   document.getElementById("scroll-in").style.height = scroll + "%";
 };
 
+// ----------------------
 // PRE-LOADER
+// ----------------------
 let loader = document.getElementById("pre-loader");
 window.addEventListener("load", () => {
   loader.style.display = "none";
   document.getElementById("post-loader").style.display = "inline-block";
 });
 
-// visitor counter
+// ----------------------
+// Visitor Counter
+// ----------------------
 const countEl = document.getElementById("views");
 
 visit();
@@ -87,4 +97,21 @@ function visit() {
     });
 }
 
-// https://github.com/irfanshadikrishad
+// ----------------------
+// TINY-SLIDER
+// ----------------------
+var slider = tns({
+  container: ".tiny_slider",
+  items: 3,
+  gutter: 10,
+  mouseDrag: true,
+  touch: true,
+  rewind: true,
+  nav: false,
+  controlsText: [
+    '<i class="fa-solid fa-circle-chevron-left"></i>',
+    '<i class="fa-solid fa-circle-chevron-right"></i>',
+  ],
+});
+
+// https://irfanshadikrishad.github.io
