@@ -118,5 +118,17 @@ var slider = tns({
     },
   },
 });
+// client-tiny-slider
+var client = tns({
+  container: ".tiny_client",
+  items: 1,
+  gutter: 10,
+  mouseDrag: true,
+  touch: true,
+  nav: false,
+  controls: false,
+  autoplay: true,
+  autoplayButtonOutput: false,
+});
 
 // https://irfanshadikrishad.github.io
