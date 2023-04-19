@@ -139,7 +139,7 @@ body {
 }
 /* SCROLLBAR DESIGN END */
 .container {
-  width: 70% !important;
+  width: 70%;
   margin: 0 auto;
 }
 .logo {
@@ -580,6 +580,9 @@ body {
 /* ------------------------- */
 /* CLIENT SECTION */
 /* ------------------------- */
+.tns-liveregion.tns-visually-hidden {
+  display: none;
+}
 .client__img {
   width: 100px;
   border-radius: 50%;
@@ -691,13 +694,14 @@ p.client__review {
 .lets-talk:hover {
   background-color: var(--bg);
   color: var(--primary);
-  /* border: 3px solid var(--primary); */
 }
 .submit {
   width: 200px;
 }
 
-/* footer style */
+/* ------------------------- */
+/* FOOTER SECTION */
+/* ------------------------- */
 .footer-container {
   background-color: var(--bg);
   padding: 5vh 0 25vh 0;
@@ -886,6 +890,7 @@ p.client__review {
   }
   .contact-down {
     flex-direction: column-reverse;
+    gap: 0;
   }
   .contact-right-header {
     font-size: 1.5rem;
@@ -902,7 +907,7 @@ p.client__review {
 }
 @media screen and (max-width: 768px) {
   .container {
-    width: 80% !important;
+    width: 80%;
   }
   .skills {
     grid-template-columns: 1fr;
@@ -937,5 +942,48 @@ p.client__review {
   }
   .footer__main {
     grid-template-columns: 1fr;
+  }
+  .footer-item:nth-child(1) {
+    width: 80%;
+  }
+  .client__box__main {
+    padding: 30px 0 0 0;
+  }
+}
+@media screen and (max-width: 550px) {
+  .pfp {
+    width: 225px;
+  }
+  .pfp-logo {
+    width: fit-content;
+    gap: 0;
+    left: -24px;
+  }
+  .pfp-logo-2 {
+    top: -242px;
+    left: 194px;
+  }
+  .pfp-logo-3 {
+    top: -182px;
+    left: 156px;
+  }
+  .pfp-desc > h3,
+  .pfp-desc > p {
+    display: none;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .title {
+    font-size: 1.2rem;
+  }
+  .info {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  .fa-linkedin-in,
+  .fa-instagram,
+  .fa-facebook-f {
+    font-size: 1.3rem;
   }
 }
