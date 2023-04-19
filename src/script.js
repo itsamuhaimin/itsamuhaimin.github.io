@@ -1,6 +1,4 @@
-// ----------------------
-// DARK-MODE
-// ----------------------
+// Dark Mode Toggler
 function dark() {
   //icon changer
   let xcon = document.getElementById("dark").innerHTML;
@@ -54,16 +52,12 @@ document.getElementById("close-menu-btn").addEventListener("click", () => {
   document.getElementById("open-menu-btn").style.display = "inline-block";
 });
 
-// ----------------------
-// SCROLL-TO-TOP
-// ----------------------
+// Scroll Top
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
 
-// ----------------------
-// SCROLL-METER
-// ----------------------
+// Scroll Meter
 window.onscroll = () => {
   let pos = document.documentElement.scrollTop;
   let calc_height =
@@ -74,18 +68,14 @@ window.onscroll = () => {
   document.getElementById("scroll-in").style.height = scroll + "%";
 };
 
-// ----------------------
 // PRE-LOADER
-// ----------------------
 let loader = document.getElementById("pre-loader");
 window.addEventListener("load", () => {
   loader.style.display = "none";
   document.getElementById("post-loader").style.display = "inline-block";
 });
 
-// ----------------------
-// Visitor Counter
-// ----------------------
+// visitor counter
 const countEl = document.getElementById("views");
 
 visit();
@@ -97,38 +87,4 @@ function visit() {
     });
 }
 
-// ----------------------
-// TINY-SLIDER
-// ----------------------
-var slider = tns({
-  container: ".tiny_slider",
-  items: 2,
-  gutter: 10,
-  mouseDrag: true,
-  touch: true,
-  rewind: true,
-  nav: false,
-  controlsText: [
-    '<i class="fa-solid fa-circle-chevron-left"></i>',
-    '<i class="fa-solid fa-circle-chevron-right"></i>',
-  ],
-  responsive: {
-    770: {
-      items: 3,
-    },
-  },
-});
-// client-tiny-slider
-var client = tns({
-  container: ".tiny_client",
-  items: 1,
-  mouseDrag: true,
-  touch: true,
-  nav: false,
-  controls: false,
-  autoplay: true,
-  autoplayButtonOutput: false,
-  autoplayHoverPause: true,
-});
-
-// https://irfanshadikrishad.github.io
+// https://github.com/irfanshadikrishad
