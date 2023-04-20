@@ -365,7 +365,7 @@
             <div class="h-bar"></div>
           </div>
           <!-- upper title end -->
-          <div class="project-boxes container">
+          <div class="project__boxes container">
             <!-- Project 1 -->
             <div
               class="project-box"
@@ -374,8 +374,8 @@
               data-aos-duration="1000"
             >
               <img src="./img/p-1.png" class="project-img" />
-              <h1 class="pro-a">Logo design for 'X' Inc.</h1>
-              <p class="pro-b highlighter">Branding</p>
+              <h1 class="project__header">Logo design for 'X' Inc.</h1>
+              <p class="project__tag highlighter">Branding</p>
             </div>
             <!-- Project 2 -->
             <div
@@ -385,8 +385,8 @@
               data-aos-duration="2000"
             >
               <img src="./img/p-2.png" class="project-img" />
-              <h1 class="pro-a">Illustration for 'Y' Inc.</h1>
-              <p class="pro-b highlighter">Graphics Design</p>
+              <h1 class="project__header">Illustration for 'Y' Inc.</h1>
+              <p class="project__tag highlighter">Graphics Design</p>
             </div>
             <!-- Project 3 -->
             <div
@@ -396,8 +396,8 @@
               data-aos-duration="3000"
             >
               <img src="./img/p-3.png" class="project-img" />
-              <h1 class="pro-a">User Interface for 'Z' Inc.</h1>
-              <p class="pro-b highlighter">UI/UX Design</p>
+              <h1 class="project__header">User Interface for 'Z' Inc.</h1>
+              <p class="project__tag highlighter">UI/UX Design</p>
             </div>
           </div>
         </div>
@@ -411,7 +411,7 @@
           <div class="h-bar"></div>
         </div>
         <!-- upper title end -->
-        <div class="services-boxes">
+        <div class="services__boxes">
           <!-- UI UX DESIGN -->
           <div
             class="services"
@@ -421,10 +421,10 @@
           >
             <div class="service-header">
               <i class="fa-solid fa-pen-ruler ico"></i>
-              <h1 class="services-title">UI/UX Design</h1>
+              <h1 class="service__title">UI/UX Design</h1>
               <div class="h-bar"></div>
             </div>
-            <p class="services-desc">Here's what i offer —</p>
+            <p class="service__desc">Here's what i offer —</p>
             <div class="lists-offer">
               <ul>
                 <li>Products Development</li>
@@ -443,10 +443,10 @@
           >
             <div class="service-header">
               <i class="fa-solid fa-brush ico"></i>
-              <h1 class="services-title">Graphics Design</h1>
+              <h1 class="service__title">Graphics Design</h1>
               <div class="h-bar"></div>
             </div>
-            <p class="services-desc">Here's what i offer —</p>
+            <p class="service__desc">Here's what i offer —</p>
             <div class="lists-offer">
               <ul>
                 <li>Banner design</li>
@@ -464,10 +464,10 @@
           >
             <div class="service-header">
               <i class="fa-solid fa-copyright ico"></i>
-              <h1 class="services-title">Branding</h1>
+              <h1 class="service__title">Branding</h1>
               <div class="h-bar"></div>
             </div>
-            <p class="services-desc">Here's what i offer —</p>
+            <p class="service__desc">Here's what i offer —</p>
             <div class="lists-offer">
               <ul>
                 <li>Logo Design</li>
@@ -487,55 +487,97 @@
           <p class="about">Client</p>
           <div class="h-bar"></div>
         </div>
-        <!-- upper title end -->
-        <div class="client-boxes">
-          <!-- Client 1 -->
-          <div
-            class="client"
-            data-aos="fade-up"
-            data-aos-offset="400"
-            data-aos-duration="1000"
-          >
-            <img src="./img/c-1.jpg" alt="" class="client-img" />
-            <p class="client-say">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-              nesciunt alias similique dolores ex ea nobis deleniti consequatur
-              error soluta?
+        <!-- Client Box Start -->
+        <div class="client__boxes">
+          <!-- 1 -->
+          <div class="client__box" data-aos="fade-up" data-aos-duration="1000">
+            <img
+              src="./img/client-1.jpg"
+              draggable="false"
+              alt="client"
+              class="client__img"
+            />
+            <p class="client__say">
+              <span class="client__quote"
+                ><i class="fa-solid fa-quote-left"></i
+              ></span>
+              I was amazed at the quality of ui ux. Ui ux has completely
+              surpassed our expectations.
+              <span class="client__quote"
+                ><i class="fa-solid fa-quote-right"></i
+              ></span>
             </p>
-            <p class="client-name">Zeus</p>
-            <p class="client-workplace highlighter">Microsoft</p>
+            <p class="client__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+            <div class="client__description">
+              <h3 class="client__name">Lennon H.</h3>
+              <p class="client__designation">— Bee Tv</p>
+            </div>
           </div>
-          <!-- Client 2 -->
-          <div
-            class="client"
-            data-aos="fade-up"
-            data-aos-offset="400"
-            data-aos-duration="2000"
-          >
-            <img src="./img/c-2.png" alt="" class="client-img" />
-            <p class="client-say">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-              nesciunt alias similique dolores ex ea nobis deleniti consequatur
-              error soluta?
+          <!-- 2 -->
+          <div class="client__box" data-aos="fade-up" data-aos-duration="2000">
+            <img
+              src="./img/client-2.jpg"
+              draggable="false"
+              alt="client"
+              class="client__img"
+            />
+            <p class="client__say">
+              <span class="client__quote"
+                ><i class="fa-solid fa-quote-left"></i
+              ></span>
+              The very best. Ui ux is exactly what our business has been
+              lacking. Ui ux impressed me on multiple levels.
+              <span class="client__quote"
+                ><i class="fa-solid fa-quote-right"></i
+              ></span>
             </p>
-            <p class="client-name">Prometheus</p>
-            <p class="client-workplace highlighter">Google</p>
+            <p class="client__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+            <div class="client__description">
+              <h3 class="client__name">Simon Jeffer</h3>
+              <p class="client__designation">— Enerpreneur</p>
+            </div>
           </div>
-          <!-- Client 3 -->
-          <div
-            class="client"
-            data-aos="fade-up"
-            data-aos-offset="400"
-            data-aos-duration="3000"
-          >
-            <img src="./img/c-3.png" alt="" class="client-img" />
-            <p class="client-say">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A
-              nesciunt alias similique dolores ex ea nobis deleniti consequatur
-              error soluta?
+          <!-- 3 -->
+          <div class="client__box" data-aos="fade-up" data-aos-duration="3000">
+            <img
+              src="./img/client-3.png"
+              draggable="false"
+              alt="client"
+              class="client__img"
+            />
+            <p class="client__say">
+              <span class="client__quote"
+                ><i class="fa-solid fa-quote-left"></i
+              ></span>
+              Not able to tell you how happy I am with ui ux. After using ui ux
+              my business improved!
+              <span class="client__quote"
+                ><i class="fa-solid fa-quote-right"></i
+              ></span>
             </p>
-            <p class="client-name">Apollo</p>
-            <p class="client-workplace highlighter">IBM</p>
+            <p class="client__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </p>
+            <div class="client__description">
+              <h3 class="client__name">CFO, Bloom Energy</h3>
+              <p class="client__designation">— Bloom Energy</p>
+            </div>
           </div>
         </div>
       </div>
@@ -679,7 +721,7 @@
             <div class="credit">
               <a
                 class="footer-link rotate"
-                href="https://github.com/irfanshadikrishad"
+                href="https://irfanshadikrishad.github.io"
                 target="_blank"
                 >Developer(s)</a
               >

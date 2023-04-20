@@ -15,6 +15,12 @@ body {
   background-color: var(--background);
   color: var(--text);
 }
+.light-mode {
+  --background: #1e1e1e;
+  --bg: #181818;
+  --text: whitesmoke;
+  --secondary: #2b2b2b;
+}
 /* PRE LOADER | PRE LOADER | PRE LOADER  */
 #pre-loader {
   display: flex;
@@ -114,14 +120,6 @@ body {
   font-weight: bold;
 }
 /* SCROLL */
-
-/* LIGHT MODE */
-.light-mode {
-  --background: #1e1e1e;
-  --bg: #181818;
-  --text: whitesmoke;
-}
-/* LIGHT MODE END */
 
 /* SCROLLBAR DESIGN START */
 ::-webkit-scrollbar {
@@ -415,7 +413,9 @@ body {
   padding: 20vh 0;
 }
 
-/* SKILLS SECTION STARTS HERE */
+/* -------------------------------------- */
+/* SKILLS */
+/* -------------------------------------- */
 .text-skills {
   font-size: 1.5rem;
   width: 70%;
@@ -436,7 +436,6 @@ body {
   background-color: var(--bg);
   border-bottom: 3px solid var(--primary);
   border-radius: 8px;
-  width: 20.6vw;
 }
 .bold,
 .edu-year {
@@ -448,11 +447,12 @@ body {
   gap: 10px;
 }
 .skills {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
 }
 .gray-bg {
-  width: 400px;
+  width: auto;
   height: 5px;
   background-color: lightgray;
 }
@@ -477,28 +477,29 @@ body {
 .skills-container {
   padding: 10vw 0 5vw 0;
 }
-/* Projects start */
+/* -------------------------------------- */
+/* PROJECTS */
+/* -------------------------------------- */
 .project-box {
-  width: 400px;
   padding: 15px;
   background-color: var(--bg);
 }
 .project-img {
   width: 100%;
 }
-.pro-a {
+.project__header {
   font-size: 1.7rem;
 }
-.pro-b {
-  font-size: 1.2rem;
+.project__tag {
+  font-size: 1.1rem;
+  font-style: italic;
   font-weight: 500;
 }
-.project-boxes {
-  display: flex;
+.project__boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1vw;
+  padding-top: 2vh;
 }
 .projects-container {
   padding: 12vw 0 12vw 0;
@@ -509,7 +510,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.services-desc {
+.service__desc {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 10px;
@@ -518,19 +519,18 @@ body {
   font-size: 2.5rem;
 }
 .lists-offer > ul > li {
-  /* list-style: none; */
   font-size: 1.2rem;
   margin-left: 24px;
 }
 .services {
   padding: 25px;
   background-color: var(--bg);
-  width: 390px;
   border-bottom: 5px solid var(--primary);
   border-radius: 8px;
 }
-.services-boxes {
-  display: flex;
+.services__boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   margin-top: 20px;
   flex-wrap: wrap;
@@ -541,35 +541,57 @@ body {
 .contact-container {
   padding: 15vw 0 8vw 0;
 }
-/* CLIENT CLIENT */
+/* -------------------------------------- */
+/* CLIENT */
+/* -------------------------------------- */
 .client {
   width: 400px;
   background-color: var(--bg);
   padding: 15px;
 }
-.client-img {
+.client__boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding-top: 2vh;
+}
+.client__img {
   width: 120px;
   border-radius: 50%;
+  border: 2px solid var(--secondary);
 }
-.client-say {
+.client__say {
   font-size: 1.2rem;
 }
-.client-name {
+.client__quote {
+  color: var(--primary);
   font-size: 1.5rem;
-  font-weight: bold;
 }
-.client-workplace {
+.client__name {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--primary);
+  font-style: italic;
 }
-.client-boxes {
+.client__designation {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+.client__rating {
+  color: gold;
+}
+.client__box {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-top: 20px;
-  flex-wrap: wrap;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--secondary);
 }
-/* CONTACT CONTACT CONTACT CONTACT CONTACT */
+/* -------------------------------------- */
+/* CONTACT */
+/* -------------------------------------- */
 .contact-left-box {
   display: flex;
   flex-direction: column;
@@ -648,8 +670,9 @@ body {
 .submit {
   width: 200px;
 }
-
-/* footer style */
+/* -------------------------------------- */
+/* FOOTER */
+/* -------------------------------------- */
 .footer-container {
   background-color: var(--bg);
   padding: 5vh 0 25vh 0;
@@ -729,22 +752,15 @@ body {
   box-shadow: inset 0 0 10px #0000000a;
 }
 
-/* Responsiveness Responsiveness Responsiveness Responsiveness */
+/* -------------------------------------- */
+/* RESPONSIVE */
+/* -------------------------------------- */
 @media screen and (max-width: 1440px) {
   .container {
     width: 80%;
   }
-  .project-box,
-  .services,
   .client {
     width: 250px;
-  }
-  .edu-box,
-  .skill-middle {
-    width: 330px;
-  }
-  .gray-bg {
-    width: 100%;
   }
   .contact-lefts {
     width: 30%;
@@ -752,18 +768,11 @@ body {
   .contact-right-boxes {
     width: 64%;
   }
-  .skills {
-    flex-wrap: wrap;
-  }
 }
 
 @media screen and (max-width: 1200px) {
   .about-content {
     flex-direction: column;
-  }
-  .edu-box,
-  .skill-middle {
-    width: 432px;
   }
 }
 
@@ -775,7 +784,6 @@ body {
     width: 100%;
   }
 }
-
 @media screen and (max-width: 980px) {
   .container {
     width: 90%;
@@ -791,7 +799,7 @@ body {
     flex-direction: column;
     justify-content: center;
     position: fixed;
-    top: 6%;
+    top: 60px;
     right: 4.5%;
     gap: 0;
   }
@@ -828,16 +836,54 @@ body {
   .contact-down {
     gap: 30px;
   }
-  /* footer */
   .footer-main {
     grid-template-columns: repeat(2, 1fr);
   }
   .footer-item:nth-child(1) {
     width: auto;
   }
-  .edu-box,
-  .skill-middle {
-    width: 86vw;
+}
+@media screen and (max-width: 960px) {
+  .name {
+    font-size: 2.5rem;
+  }
+  .name-about {
+    font-size: 2rem;
+  }
+  .title-about {
+    font-size: 1.5rem;
+  }
+  .skills {
+    grid-template-columns: 1fr;
+  }
+  .project__header {
+    font-size: 1.3rem;
+  }
+  .service__title {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  .service__desc {
+    font-size: 1.2rem;
+  }
+  .lists-offer > ul > li {
+    font-size: 1rem;
+    font-weight: lighter;
+    font-style: italic;
+  }
+}
+@media screen and (max-width: 768px) {
+  .project__boxes,
+  .services__boxes,
+  .client__boxes {
+    grid-template-columns: 1fr 1fr;
+  }
+  .header-skills {
+    font-size: 1.5rem;
+  }
+  .text-skills {
+    font-size: 1.2rem;
+    width: auto;
   }
 }
 @media screen and (max-width: 700px) {
@@ -864,13 +910,6 @@ body {
   .pfp-logo-3 {
     top: -198px;
     left: 162px;
-  }
-  .text-skills {
-    width: 100%;
-  }
-  .edu-box,
-  .skill-middle {
-    width: 84.1vw;
   }
   .contact-down {
     flex-direction: column-reverse;
@@ -899,17 +938,6 @@ body {
   .name-about {
     font-size: 2.2rem;
   }
-  .title-about {
-    font-size: 1.5rem;
-  }
-  .text-skills {
-    width: 100%;
-    font-size: 1.4rem;
-  }
-  .edu-box,
-  .skill-middle {
-    width: 84vw;
-  }
   .desc {
     font-size: 1.4rem;
   }
@@ -925,6 +953,11 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
+  .project__boxes,
+  .services__boxes,
+  .client__boxes {
+    grid-template-columns: 1fr;
+  }
   .pfp-logo {
     left: -30px;
   }
@@ -950,10 +983,6 @@ body {
     width: 100%;
     font-size: 1.2rem;
   }
-  .edu-box,
-  .skill-middle {
-    width: 81.7vw;
-  }
   .about-box {
     flex-wrap: wrap;
   }
@@ -969,8 +998,6 @@ body {
   .about-box {
     grid-template-columns: repeat(2, 1fr);
   }
-  .project-box,
-  .services,
   .client {
     width: 100%;
   }
@@ -981,15 +1008,32 @@ body {
   }
 }
 @media screen and (max-width: 400px) {
+  .pfp {
+    width: 275px;
+  }
+  .pfp-desc > h3,
+  .pfp-desc > p {
+    display: none;
+  }
+  .pfp-logo {
+    width: fit-content;
+    gap: 0;
+  }
+  .pfp-logo:nth-child(1) {
+    left: -15px;
+  }
+  .pfp-logo:nth-child(2) {
+    left: 220px;
+  }
+  .pfp-logo:nth-child(3) {
+    left: 220px;
+  }
   .about-bg {
     font-size: 2.5rem;
     margin-bottom: 5px;
   }
   .about {
     font-size: 1.5rem;
-  }
-  .project-boxes {
-    margin-top: 20px;
   }
   .name,
   .name-about {
@@ -1007,14 +1051,8 @@ body {
   .projects-container {
     padding: 50px 0;
   }
-  .project-box,
-  .services,
   .client {
     width: 100%;
-  }
-  .edu-box,
-  .skill-middle {
-    width: 79.5vw;
   }
 }
 @media screen and (max-width: 350px) {
@@ -1022,9 +1060,7 @@ body {
   .cv {
     padding: 10px 20px;
   }
-  .edu-box,
-  .skill-middle {
-    width: 75vw;
-  }
 }
-/* Responsiveness Responsiveness Responsiveness Responsiveness */
+/* -------------------------------------- */
+/* (▀̿Ĺ̯▀̿ ̿)  |  ( •̀ ω •́ )y */
+/* -------------------------------------- */
