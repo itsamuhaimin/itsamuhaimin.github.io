@@ -86,5 +86,25 @@ function visit() {
       countEl.innerHTML = res.value;
     });
 }
-
+// tiny-slider
+var slider = tns({
+  container: ".tiny__projects",
+  items: 1,
+  gutter: 10,
+  nav: false,
+  controls: true,
+  rewind: true,
+  controlsText: [
+    '<i class="fa-solid fa-circle-chevron-left"></i>',
+    '<i class="fa-solid fa-circle-chevron-right"></i>',
+  ],
+  responsive: {
+    500: {
+      items: 2,
+    },
+    960: {
+      items: 3,
+    },
+  },
+});
 // https://github.com/irfanshadikrishad

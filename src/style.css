@@ -480,9 +480,34 @@ body {
 /* -------------------------------------- */
 /* PROJECTS */
 /* -------------------------------------- */
+#tns1-ow {
+  padding-top: 2vh !important;
+}
+.tns-outer {
+  position: relative;
+}
+.tns-controls > button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: var(--primary);
+}
+.tns-controls > button:nth-child(1) {
+  position: absolute;
+  right: -10px;
+  top: 100px;
+  z-index: 1;
+}
+.tns-controls > button:nth-child(2) {
+  position: absolute;
+  right: -10px;
+  top: 135px;
+  z-index: 1;
+}
 .project-box {
-  padding: 15px;
-  background-color: var(--bg);
+  padding: 10px;
+  background-color: var(--secondary);
+  height: 280px;
 }
 .project-img {
   width: 100%;
@@ -494,12 +519,6 @@ body {
   font-size: 1.1rem;
   font-style: italic;
   font-weight: 500;
-}
-.project__boxes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding-top: 2vh;
 }
 .projects-container {
   padding: 12vw 0 12vw 0;
@@ -873,7 +892,6 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
-  .project__boxes,
   .services__boxes,
   .client__boxes {
     grid-template-columns: 1fr 1fr;
@@ -953,7 +971,6 @@ body {
   }
 }
 @media screen and (max-width: 500px) {
-  .project__boxes,
   .services__boxes,
   .client__boxes {
     grid-template-columns: 1fr;
