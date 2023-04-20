@@ -507,7 +507,7 @@ body {
 .project-box {
   padding: 10px;
   background-color: var(--secondary);
-  height: 280px;
+  height: 300px;
 }
 .project-img {
   width: 100%;
